@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FestesMajors</string>
+    <string name="app_name" translatable="false">FestesMajors</string>
 
     <string name="title_section1">Log in</string>
     <string name="title_section2">Favourites</string>
@@ -14,4 +14,12 @@
     <string name="title_activity_search_page">Search</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_section4">Exit</string>
+
+    <string name="type_label">Type of event</string>
+    <string name="search_label">Search</string>
+    <string name="search_text">Text to search</string>
+    <string name="type_text">Type of event</string>
+
+    <string name="search_button">Search</string>
+
 </resources>

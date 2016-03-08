@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FestesMajors</string>
+    <string name="title_section1">Entrar</string>
+    <string name="title_section2">Preferits</string>
+    <string name="title_section3">Crear nou esdeveniment</string>
+    <string name="title_section4">Sortir</string>
+    <string name="type_label">Tipus d\'esdeveniment</string>
+    <string name="type_text">Tipus d\'esdeveniment</string>
+    <string name="search_label">Cerca</string>
+    <string name="search_text">Text a cercar</string>
+    <string name="title_activity_search_page">Cerca</string>
+    <string name="action_settings">Configuració</string>
+</resources>

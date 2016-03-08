@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FestesMajors</string>
+    <string name="action_settings">Configuració</string>
+    <string name="search_label">Buscar</string>
+    <string name="search_text">Texto a buscar</string>
+    <string name="title_activity_search_page">Buscar</string>
+    <string name="title_section1">Entrar</string>
+    <string name="title_section2">Favoritos</string>
+    <string name="title_section3">Crear nuevo evento</string>
+    <string name="title_section4">Salir</string>
+    <string name="type_label">Tipo de evento</string>
+    <string name="type_text">Tipo de evento</string>
+</resources>
