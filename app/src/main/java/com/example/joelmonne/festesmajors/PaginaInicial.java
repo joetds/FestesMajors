@@ -1,6 +1,7 @@
 package com.example.joelmonne.festesmajors;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -144,6 +145,12 @@ public class PaginaInicial extends ActionBarActivity
             ((PaginaInicial) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
+    }
+
+    public void onSearchClick (View v){
+        Intent intent = new Intent(this, SearchPage.class);
+        startActivity(intent);
+        finish();
     }
 
 }
