@@ -2,12 +2,12 @@ package com.example.joelmonne.festesmajors;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Configuration;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,13 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.Toolbar;
 
 
 
-
-public class PaginaInicial extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public class PaginaInicial extends AppCompatActivity
+        implements NavigationDrawerFragment.NavigationDrawerCallbacks{
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -32,6 +30,9 @@ public class PaginaInicial extends ActionBarActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+
+    ViewPager  pager;
+    TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,21 @@ public class PaginaInicial extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+
+        pager= (ViewPager) findViewById(R.id.view_pager);
+        tabLayout= (TabLayout) findViewById(R.id.tab_layout);
+
+        FragmentManager manager=getSupportFragmentManager();
+        PagerAdapter adapter=new PagerAdapter(manager);
+        pager.setAdapter(adapter);
+
+        tabLayout.setupWithViewPager(pager);
+        // mTabLayout.setupWithViewPager(mPager1);
+        pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+        tabLayout.setTabsFromPagerAdapter(adapter);
+
     }
 
     @Override

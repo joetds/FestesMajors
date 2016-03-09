@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaginaInicial">
+    tools:context=".PaginaInicial"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
@@ -27,5 +28,23 @@
         android:layout_gravity="start"
         android:name="com.example.joelmonne.festesmajors.NavigationDrawerFragment"
         tools:layout="@layout/fragment_navigation_drawer" />
+
+    <android.support.design.widget.TabLayout
+        android:background="#3F51B5"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabSelectedTextColor="#ffffff"
+
+        >
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@id/tab_layout"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </android.support.v4.widget.DrawerLayout>
