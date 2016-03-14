@@ -1,25 +1,22 @@
 <resources>
-    <string name="app_name" translatable="false">FestesMajors</string>
-
-    <string name="title_section1">Log in</string>
-    <string name="title_section2">Favourites</string>
-    <string name="title_section3">Create new event</string>
+    <string name="app_name" translatable="false">Popular Events</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_example">Example action</string>
+    <string name="action_favourites">Favourites</string>
+    <string name="action_map">Events Map</string>
+    <string name="action_create_event">Create new event</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_search_page">Search</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_section4">Exit</string>
-
-    <string name="type_label">Type of event</string>
     <string name="search_label">Search</string>
-    <string name="search_text">Text to search</string>
-    <string name="type_text">Type of event</string>
-
-    <string name="search_button">Search</string>
+    <string name="search_text">What do you want to search?</string>
+    <string name="title_activity_search_page">Search</string>
+    <string name="title_section1">Enter</string>
+    <string name="title_section2">Favourites</string>
+    <string name="title_section3">Create new event</string>
+    <string name="title_section4">Exit</string>
+    <string name="type_label">Type of event</string>
+    <string name="type_text">Type of event to search</string>
 
 </resources>

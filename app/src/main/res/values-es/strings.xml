@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FestesMajors</string>
+    <string name="app_name">Festes Majors</string>
     <string name="action_settings">Configuració</string>
     <string name="search_label">Buscar</string>
     <string name="search_text">Texto a buscar</string>

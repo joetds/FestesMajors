@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FestesMajors</string>
+    <string name="app_name">Festes Majors</string>
     <string name="title_section1">Entrar</string>
     <string name="title_section2">Preferits</string>
     <string name="title_section3">Crear nou esdeveniment</string>

@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import java.util.Locale;
+
 /**
  * Created by Joel Monné on 09/03/2016.
  */
@@ -35,16 +37,13 @@ public class PagerAdapter  extends FragmentStatePagerAdapter{
 
     @Override
     public CharSequence getPageTitle(int position) {
-        String title=" ";
-        switch (position){
+        Locale l = Locale.getDefault();
+        switch (position) {
             case 0:
-                title = "Cerca";
-                break;
+                return "Cerca";
             case 1:
-                title = "Mapa";
-                break;
+                return "Mapa";
         }
-
-        return title;
+        return null;
     }
 }
